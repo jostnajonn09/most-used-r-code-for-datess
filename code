@@ -192,3 +192,12 @@ ggplot(grades, aes(hour)) + geom_histogram(stat = "count")
 hour_marks <- data.frame(aggregate(marks~hour, grades, median))
 hour_marks
 ggplot(hour_marks, aes(hour, marks))+geom_bar(stat="identity")
+
+
+
+######################################################################################################################################
+
+#Date padding is implemented in the padr package in R. If you store your data frame, with your date-time variable stored as POSIXct or POSIXlt. All you need to do is:
+
+library(padr)
+pad(df_name)
