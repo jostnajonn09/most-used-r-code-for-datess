@@ -201,3 +201,6 @@ ggplot(hour_marks, aes(hour, marks))+geom_bar(stat="identity")
 
 library(padr)
 pad(df_name)
+
+#to get more information about padr package and like thicken and pad function use
+vignette("padr")
